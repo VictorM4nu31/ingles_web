@@ -1,37 +1,156 @@
+<?php
+session_start();
+if (!empty($_SESSION['test_completed'])) {
+    session_unset();
+    session_destroy();
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit;
+}
+?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección B</title>
+    <title>Unit 10 - Lesson B</title>
 </head>
 <body>
-    <h1>Lección B</h1>
-    <form action="procesar_leccion_b.php" method="post">
-        <div>
-            <p>1. ¿Cuál es el océano más grande del mundo?</p>
-            <label>
-                <input type="radio" name="pregunta1" value="a" required>
-                a) Atlántico
-            </label><br>
-            <label>
-                <input type="radio" name="pregunta1" value="b">
-                b) Índico
-            </label><br>
-            <label>
-                <input type="radio" name="pregunta1" value="c">
-                c) Pacífico
-            </label><br>
-            <label>
-                <input type="radio" name="pregunta1" value="d">
-                d) Ártico
-            </label>
-        </div>
-        
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-    <button onclick="window.location.href='index.php'">Regresar a la Pantalla Principal</button>
+    <div>
+        <h1>Unit 10 - Lesson B</h1>
+
+        <section>
+            <h2>Advising against something</h2>
+            <p>It focuses on how to express recommendations so that someone avoids taking an action or making a decision that may be harmful or not beneficial. This type of advice usually has a preventive tone and is designed to warn of possible risks, inconveniences or negative consequences.</p>
+            <img src="path/to/image.jpg" alt="Advising Image">
+        </section>
+
+        <section>
+            <h2>Considering advice</h2>
+            <p>It focuses on how to listen, reflect and respond to the advice someone gives us. This process involves not only understanding the advice, but also evaluating its relevance and usefulness before making a decision.</p>
+        </section>
+
+        <form action="" method="post">
+            <section>
+                <h2>Test Questions</h2>
+
+                <?php 
+                $questions = [
+                    "What does the phrase 'You shouldn't eat too much sugar' mean?" => [
+                        "a" => "It is mandatory to eat a lot of sugar.",
+                        "b" => "It is not advisable to eat a lot of sugar.",
+                        "c" => "It is a good idea to eat more sugar.",
+                        "d" => "It is necessary to avoid sugar completely."
+                    ],
+                    "Which of the following is an appropriate way to advise someone not to swim in deep water?" => [
+                        "a" => "You should not swim in deep water.",
+                        "b" => "You must swim in deep water.",
+                        "c" => "It is fun to swim in deep water.",
+                        "d" => "You have to swim in deep water."
+                    ],
+                    "Which phrase expresses negative advice?" => [
+                        "a" => "It's a great idea to try.",
+                        "b" => "You shouldn't go alone.",
+                        "c" => "You must do it immediately.",
+                        "d" => "Why don't you try it?"
+                    ],
+                    "How could you advise someone not to go out without a coat?" => [
+                        "a" => "It is not a good idea to go out without a coat.",
+                        "b" => "You should definitely go out without a coat.",
+                        "c" => "You must go out without a coat.",
+                        "d" => "Going out without a coat is a good idea."
+                    ],
+                    "Which phrase does NO correspond to warning against something?" => [
+                        "a" => "You should not eat junk food every day.",
+                        "b" => "I would not recommend missing your classes.",
+                        "c" => "It is a good idea to exercise daily.",
+                        "d" => "It is not a good idea to spend too much time on the phone."
+                    ],
+                    "Which of these phrases shows that someone is thinking about advice received?" => [
+                        "a" => "I'll think about it.",
+                        "b" => "I'm not interested.",
+                        "c" => "I already know that.",
+                        "d" => "That's your problem."
+                    ],
+                    "If someone says 'That's a good point,' what are they doing?" => [
+                        "a" => "Accept that the advice makes sense.",
+                        "b" => "Completely reject the advice.",
+                        "c" => "Ignore the comment.",
+                        "d" => "Discuss the advice."
+                    ],
+                    "Which statement shows that a person is not considering advice?" => [
+                        "a" => "That's an interesting idea.",
+                        "b" => "I'll think about it.",
+                        "c" => "I don't care.",
+                        "d" => "I understand what you mean."
+                    ],
+                    "If someone answers 'Thanks, I'll try,' what does it mean?" => [
+                        "a" => "You agree to follow the advice.",
+                        "b" => "Reject the advice.",
+                        "c" => "He did not understand the advice.",
+                        "d" => "You believe that the advice is not useful."
+                    ],
+                    "What expression is used to show that someone understands advice, but does not decide immediately?" => [
+                        "a" => "I'll think about it.",
+                        "b" => "I'm sure I'll do it now.",
+                        "c" => "I don't agree with you.",
+                        "d" => "That is not possible."
+                    ]
+                ];
+
+                $correct_answers = [
+                    "What does the phrase 'You shouldn't eat too much sugar' mean?" => "b",
+                    "Which of the following is an appropriate way to advise someone not to swim in deep water?" => "a",
+                    "Which phrase expresses negative advice?" => "b",
+                    "How could you advise someone not to go out without a coat?" => "a",
+                    "Which phrase does NO correspond to warning against something?" => "c",
+                    "Which of these phrases shows that someone is thinking about advice received?" => "a",
+                    "If someone says 'That's a good point,' what are they doing?" => "a",
+                    "Which statement shows that a person is not considering advice?" => "c",
+                    "If someone answers 'Thanks, I'll try,' what does it mean?" => "a",
+                    "What expression is used to show that someone understands advice, but does not decide immediately?" => "a",
+                ];
+
+                foreach ($questions as $question => $options): ?>
+                    <div>
+                        <h3><?php echo $question; ?></h3>
+                        <ul>
+                            <?php foreach ($options as $key => $option): ?>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="answers[<?php echo $question; ?>]" value="<?php echo $key; ?>">
+                                        <?php echo $option; ?>
+                                    </label>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endforeach; ?>
+
+                <button type="submit">Submit Test</button>
+            </section>
+        </form>
+
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $answers = $_POST['answers'] ?? [];
+            $score = 0;
+            $total = count($correct_answers);
+
+            echo "<section><h2>Results</h2><ul>";
+            foreach ($correct_answers as $question => $correct) {
+                $user_answer = $answers[$question] ?? 'No answer';
+                $is_correct = $user_answer === $correct;
+                if ($is_correct) {
+                    $score++;
+                }
+                echo "<li><strong>Question:</strong> $question";
+                echo "<br><strong>Your answer:</strong> " . ($questions[$question][$user_answer] ?? 'No answer selected');
+                echo "<br><strong>Correct answer:</strong> " . $questions[$question][$correct];
+                echo "<br><strong>Result:</strong> " . ($is_correct ? 'Correct' : 'Incorrect') . "</li><br>";
+            }
+            echo "</ul><p>Your score: $score out of $total</p></section>";
+        }
+        ?>
+    </div>
 </body>
 </html>
