@@ -38,6 +38,12 @@
             </a>
         </div>
 
+        <!-- Botones para las unidades 10 y 11 -->
+        <div class="text-center mt-4">
+            <a href="unidades/unidad10.php" class="btn btn-primary">Go to Unit 10</a>
+            <a href="unidades/unidad11.php" class="btn btn-primary">Go to Unit 11</a>
+        </div>
+
     <?php include('includes/footer.php'); ?> <!-- Footer dinámico -->
 
     <!-- Incluye Bootstrap JS y jQuery -->

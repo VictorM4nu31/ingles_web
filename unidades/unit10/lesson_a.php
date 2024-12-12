@@ -12,19 +12,19 @@
             <p>1. ¿Cuál es la capital de Francia?</p>
             <label>
                 <input type="radio" name="pregunta1" value="a" required>
-                a) Berlín
+                Berlín
             </label><br>
             <label>
                 <input type="radio" name="pregunta1" value="b">
-                b) Madrid
+                Madrid
             </label><br>
             <label>
                 <input type="radio" name="pregunta1" value="c">
-                c) París
+                París
             </label><br>
             <label>
                 <input type="radio" name="pregunta1" value="d">
-                d) Roma
+                Roma
             </label>
         </div>
         
@@ -32,19 +32,19 @@
             <p>2. ¿Qué idioma se habla en Brasil?</p>
             <label>
                 <input type="radio" name="pregunta2" value="a" required>
-                a) Español
+                a Español
             </label><br>
             <label>
                 <input type="radio" name="pregunta2" value="b">
-                b) Portugués
+                b Portugués
             </label><br>
             <label>
                 <input type="radio" name="pregunta2" value="c">
-                c) Inglés
+                c Inglés
             </label><br>
             <label>
                 <input type="radio" name="pregunta2" value="d">
-                d) Francés
+                d Francés
             </label>
         </div>
 
