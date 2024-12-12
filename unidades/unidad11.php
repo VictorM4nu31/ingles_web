@@ -14,6 +14,6 @@
         <button onclick="window.location.href='unit11/lesson_d.php'" class="btn btn-primary">Lección D</button>
     </div>
 
-    <button onclick="window.location.href='index.php'" class="btn btn-secondary">Regresar a la Pantalla Principal</button>
+    <button onclick="window.location.href='../index.php'" class="btn btn-secondary">Regresar a la Pantalla Principal</button>
 </body>
 </html>
