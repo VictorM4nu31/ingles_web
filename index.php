@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Curso de Inglés</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -171,10 +170,8 @@
                 <span class="sr-only">Siguiente</span>
             </a>
         </div>
-<<<<<<< HEAD
-    </div>
 
-=======
+    </div>
 
         <!-- Botones para las unidades 10 y 11 -->
         <div class="text-center mt-4">
@@ -184,7 +181,6 @@
 
     <?php include('includes/footer.php'); ?> <!-- Footer dinámico -->
 
->>>>>>> 415da0469c41649415d4890fb24b99bcf8566cbb
     <!-- Incluye Bootstrap JS y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
