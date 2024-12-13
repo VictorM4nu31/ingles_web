@@ -12,12 +12,112 @@ if (!empty($_SESSION['test_completed'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Unit 10 - Lesson C</title>
+=======
+    <title>Lección C</title>
+    <style>
+        /* Paleta de colores */
+        :root {
+            --fondo: #333333; /* Color de fondo */
+            --fondo-formulario:rgb(218, 217, 217); /* Color de fondo de formulario */
+            --color-texto: #333333; /* Color del texto */
+            --color-boton: #32cd32; /* Color del botón */
+            --color-boton-hover: #28a745; /* Color del botón al pasar el ratón */
+            --color-titulo:rgb(68, 165, 112); /* Color de título */
+        }
+
+        body {
+            background-color: var(--fondo);
+            font-family: Arial, sans-serif;
+            color: var(--color-texto);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--color-titulo);
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        form {
+            background-color: var(--fondo-formulario);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: var(--color-boton);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--color-boton-hover);
+        }
+
+        button {
+            background-color: #1e4d33;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color:rgb(26, 61, 42);
+        }
+
+        /* Nuevo estilo para el botón de regresar */
+        .boton-regresar {
+            width: 100%;
+            background-color: #1e4d33; /* Color similar al botón de formulario */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .boton-regresar:hover {
+            background-color: rgb(26, 61, 42);
+        }
+    </style>
+>>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </head>
 <body>
     <div>
         <h1>Unit 10: Separable Phrasal Verbs and Second Conditional</h1>
 
+<<<<<<< HEAD
         <section>
             <h2>Separable Phrasal Verbs</h2>
             <p>Separable phrasal verbs are dynamic linguistic tools that add color and flexibility to English communication. They consist of a verb and a particle that can be separated by an object, creating multiple ways to express the same idea.</p>
@@ -176,5 +276,12 @@ if (!empty($_SESSION['test_completed'])) {
         }
         ?>
     </div>
+=======
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    <button onclick="window.location.href='../index.php'">Regresar a la Pantalla Principal</button>
+>>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </body>
 </html>
