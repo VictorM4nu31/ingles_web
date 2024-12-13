@@ -13,6 +13,103 @@ if (!empty($_SESSION['test_completed'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 10 - Lesson B</title>
+    <style>
+        :root {
+            --fondo: #333333;
+            --fondo-formulario: rgb(231, 229, 229);
+            --color-texto: #333333;
+            --color-boton: #32cd32;
+            --color-boton-hover: #28a745;
+            --color-titulo: rgb(68, 165, 112);
+        }
+
+        body {
+            background-color: var(--fondo);
+            font-family: Arial, sans-serif;
+            color: var(--color-texto);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--color-titulo);
+            font-size: 2.5rem;
+            text-align: center;
+        }
+         
+        .test {
+            color:rgb(15, 71, 28);
+        }
+
+        form {
+            background-color: var(--fondo-formulario);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: var(--color-boton);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--color-boton-hover);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px; /* Ajusta el tamaño máximo */
+            height: 200px; /* Ajusta la altura fija */
+            object-fit: cover; /* Asegura proporciones */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section p, section h2 {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -31,7 +128,7 @@ if (!empty($_SESSION['test_completed'])) {
 
         <form action="" method="post">
             <section>
-                <h2>Test Questions</h2>
+                <h2 class="test">Test Questions</h2>
 
                 <?php 
                 $questions = [

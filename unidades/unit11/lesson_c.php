@@ -13,32 +13,162 @@ if (!empty($_SESSION['test_completed'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 11 - Lesson C</title>
+    <style>
+        :root {
+            --fondo: #333333;
+            --fondo-formulario: rgb(218, 217, 217);
+            --color-texto: #333333;
+            --color-boton: #32cd32;
+            --color-boton-hover: #28a745;
+            --color-titulo: rgb(68, 165, 112);
+        }
+
+        body {
+            background-color: var(--fondo);
+            font-family: Arial, sans-serif;
+            color: var(--color-texto);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--color-titulo);
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        .test {
+            color:rgb(15, 71, 28);
+        }
+
+        form {
+            background-color: var(--fondo-formulario);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: var(--color-boton);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--color-boton-hover);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px; /* Ajusta el tamaño máximo */
+            height: 200px; /* Ajusta la altura fija */
+            object-fit: cover; /* Asegura proporciones */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section p, section h2 {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+            margin: 20px;
+        }
+
+        .special-section .content-box {
+            background-color: #a8d5a5; /* Verde claro */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .special-section .content-box {
+            flex: 1 1 calc(50% - 20px); /* Dos columnas con espacio */
+        }
+
+        /* Para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .special-section .content-box {
+                flex: 1 1 100%; /* Una columna */
+            }
+        }
+    </style>
 </head>
 <body>
     <div>
         <h1>Unit 11: Verb and Noun Formation & Present Perfect with Yet and Already</h1>
 
-        <section>
+        <section class="special-section">
             <h2>Verb and Noun Formation</h2>
             <p>Certain words can function as both verbs and nouns, like "announce" and "composition". This is known as verb-noun word pairs or conversion. Key points include:</p>
-            <h3>Key Points:</h3>
-            <ul>
-                <li>The noun and verb forms of these words have the same spelling but different pronunciations. The stress usually shifts to the first syllable when the word is used as a noun.</li>
-                <li>Examples include: announce/announcement, entertain/entertainment, perform/performance, produce/production, record/recording, and release/release.</li>
-                <li>The task is to identify the noun forms of the verbs listed in the table.</li>
-            </ul>
+            <div class="content-box">
+                <h3>Key Points:</h3>
+                <ul>
+                    <li>The noun and verb forms of these words have the same spelling but different pronunciations. The stress usually shifts to the first syllable when the word is used as a noun.</li>
+                    <li>Examples include: announce/announcement, entertain/entertainment, perform/performance, produce/production, record/recording, and release/release.</li>
+                    <li>The task is to identify the noun forms of the verbs listed in the table.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="special-section">
             <h2>Present Perfect with Yet and Already</h2>
             <p>Using the present perfect tense with the adverbs "yet" and "already" helps to discuss actions that have or have not happened up to the present time.</p>
-            <h3>Key Points:</h3>
-            <ul>
-                <li><strong>"Yet":</strong> Used in negative sentences to indicate an action has not happened by the present moment.</li>
-                <li><strong>"Already":</strong> Used in affirmative sentences to indicate an action has happened before the present moment.</li>
-                <li>The present perfect tense is formed with "have/has + past participle".</li>
-            </ul>
+            <div class="content-box">
+                <h3>Key Points:</h3>
+                <ul>
+                    <li><strong>"Yet":</strong> Used in negative sentences to indicate an action has not happened by the present moment.</li>
+                    <li><strong>"Already":</strong> Used in affirmative sentences to indicate an action has happened before the present moment.</li>
+                    <li>The present perfect tense is formed with "have/has + past participle".</li>
+                </ul>
+            </div>
         </section>
+
 
         <form action="" method="post">
             <section>

@@ -12,19 +12,15 @@ if (!empty($_SESSION['test_completed'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Unit 10 - Lesson C</title>
-=======
-    <title>Lección C</title>
     <style>
-        /* Paleta de colores */
         :root {
-            --fondo: #333333; /* Color de fondo */
-            --fondo-formulario:rgb(218, 217, 217); /* Color de fondo de formulario */
-            --color-texto: #333333; /* Color del texto */
-            --color-boton: #32cd32; /* Color del botón */
-            --color-boton-hover: #28a745; /* Color del botón al pasar el ratón */
-            --color-titulo:rgb(68, 165, 112); /* Color de título */
+            --fondo: #333333;
+            --fondo-formulario: rgb(218, 217, 217);
+            --color-texto: #333333;
+            --color-boton: #32cd32;
+            --color-boton-hover: #28a745;
+            --color-titulo: rgb(68, 165, 112);
         }
 
         body {
@@ -39,6 +35,10 @@ if (!empty($_SESSION['test_completed'])) {
             color: var(--color-titulo);
             font-size: 2.5rem;
             text-align: center;
+        }
+        
+        .test {
+            color:rgb(15, 71, 28);
         }
 
         form {
@@ -58,6 +58,15 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin-bottom: 8px;
             font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         input[type="radio"] {
@@ -80,82 +89,107 @@ if (!empty($_SESSION['test_completed'])) {
             background-color: var(--color-boton-hover);
         }
 
-        button {
-            background-color: #1e4d33;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
+        section img {
+            display: block;
+            margin: 0 auto;
             width: 100%;
+            max-width: 300px; /* Ajusta el tamaño máximo */
+            height: 200px; /* Ajusta la altura fija */
+            object-fit: cover; /* Asegura proporciones */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        button:hover {
-            background-color:rgb(26, 61, 42);
-        }
-
-        /* Nuevo estilo para el botón de regresar */
-        .boton-regresar {
-            width: 100%;
-            background-color: #1e4d33; /* Color similar al botón de formulario */
+        section p, section h2 {
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
+            text-align: center;
         }
 
-        .boton-regresar:hover {
-            background-color: rgb(26, 61, 42);
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+            margin: 20px;
+        }
+
+        .special-section .content-box {
+            background-color: #a8d5a5; /* Verde claro */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .special-section .content-box {
+            flex: 1 1 calc(50% - 20px); /* Dos columnas con espacio */
+        }
+
+        /* Para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .special-section .content-box {
+                flex: 1 1 100%; /* Una columna */
+            }
         }
     </style>
->>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </head>
 <body>
     <div>
         <h1>Unit 10: Separable Phrasal Verbs and Second Conditional</h1>
 
-<<<<<<< HEAD
-        <section>
+        <section class="special-section">
             <h2>Separable Phrasal Verbs</h2>
-            <p>Separable phrasal verbs are dynamic linguistic tools that add color and flexibility to English communication. They consist of a verb and a particle that can be separated by an object, creating multiple ways to express the same idea.</p>
-            <h3>Key Characteristics:</h3>
-            <ul>
-                <li>Flexibility in sentence structure</li>
-                <li>Ability to change meaning dramatically</li>
-                <li>Common in informal and conversational English</li>
-            </ul>
-            <h3>Interesting Facts:</h3>
-            <ul>
-                <li>Native speakers use these verbs unconsciously</li>
-                <li>They can completely transform the meaning of a base verb</li>
-                <li>Mastering them makes your English sound more natural</li>
-            </ul>
+            <p>Separable phrasal verbs are dynamic linguistic tools that add color and flexibility to English communication...</p>
+            <div class="content-box">
+                <h3>Key Characteristics:</h3>
+                <ul>
+                    <li>Flexibility in sentence structure</li>
+                    <li>Ability to change meaning dramatically</li>
+                    <li>Common in informal and conversational English</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Interesting Facts:</h3>
+                <ul>
+                    <li>Native speakers use these verbs unconsciously</li>
+                    <li>They can completely transform the meaning of a base verb</li>
+                    <li>Mastering them makes your English sound more natural</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="special-section">
             <h2>Second Conditional</h2>
-            <p>The Second Conditional is a powerful grammatical structure that allows speakers to explore hypothetical situations, imagination, and alternative realities. It's a window into potential futures that may never happen but are fun to contemplate.</p>
-            <h3>Key Characteristics:</h3>
-            <ul>
-                <li>Expresses unreal or improbable situations</li>
-                <li>Uses past simple in the "if" clause</li>
-                <li>Uses "would" + base verb in the result clause</li>
-                <li>Demonstrates linguistic creativity</li>
-            </ul>
-            <h3>Interesting Facts:</h3>
-            <ul>
-                <li>Helps develop speaking fluency</li>
-                <li>Encourages creative thinking</li>
-                <li>Useful in storytelling and hypothetical discussions</li>
-            </ul>
+            <p>The Second Conditional is a powerful grammatical structure that allows speakers to explore hypothetical situations...</p>
+            <div class="content-box">
+                <h3>Key Characteristics:</h3>
+                <ul>
+                    <li>Expresses unreal or improbable situations</li>
+                    <li>Uses past simple in the "if" clause</li>
+                    <li>Uses "would" + base verb in the result clause</li>
+                    <li>Demonstrates linguistic creativity</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Interesting Facts:</h3>
+                <ul>
+                    <li>Helps develop speaking fluency</li>
+                    <li>Encourages creative thinking</li>
+                    <li>Useful in storytelling and hypothetical discussions</li>
+                </ul>
+            </div>
         </section>
+
 
         <form action="" method="post">
             <section>
-                <h2>Test Questions</h2>
+                <h2 class="test">Test Questions</h2>
 
                 <?php 
                 $questions = [
@@ -276,12 +310,5 @@ if (!empty($_SESSION['test_completed'])) {
         }
         ?>
     </div>
-=======
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-    <button onclick="window.location.href='../index.php'">Regresar a la Pantalla Principal</button>
->>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </body>
 </html>

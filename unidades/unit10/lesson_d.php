@@ -12,19 +12,15 @@ if (!empty($_SESSION['test_completed'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Unit 10 - Lesson D</title>
-=======
-    <title>Lección D</title>
     <style>
-        /* Paleta de colores */
         :root {
-            --fondo: #333333; /* Color de fondo */
-            --fondo-formulario:rgb(218, 217, 217); /* Color de fondo de formulario */
-            --color-texto: #333333; /* Color del texto */
-            --color-boton: #32cd32; /* Color del botón */
-            --color-boton-hover: #28a745; /* Color del botón al pasar el ratón */
-            --color-titulo:rgb(68, 165, 112); /* Color de título */
+            --fondo: #333333;
+            --fondo-formulario: hsl(0, 1.30%, 85.30%);
+            --color-texto: #333333;
+            --color-boton: #32cd32;
+            --color-boton-hover: #28a745;
+            --color-titulo: rgb(68, 165, 112);
         }
 
         body {
@@ -39,6 +35,11 @@ if (!empty($_SESSION['test_completed'])) {
             color: var(--color-titulo);
             font-size: 2.5rem;
             text-align: center;
+        }
+
+        
+        .test {
+            color:rgb(15, 71, 28);
         }
 
         form {
@@ -58,6 +59,15 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin-bottom: 8px;
             font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         input[type="radio"] {
@@ -80,85 +90,110 @@ if (!empty($_SESSION['test_completed'])) {
             background-color: var(--color-boton-hover);
         }
 
-        button {
-            background-color: #1e4d33;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
+        section img {
+            display: block;
+            margin: 0 auto;
             width: 100%;
+            max-width: 300px; /* Ajusta el tamaño máximo */
+            height: 200px; /* Ajusta la altura fija */
+            object-fit: cover; /* Asegura proporciones */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        button:hover {
-            background-color:rgb(26, 61, 42);
-        }
-
-        /* Nuevo estilo para el botón de regresar */
-        .boton-regresar {
-            width: 100%;
-            background-color: #1e4d33; /* Color similar al botón de formulario */
+        section p, section h2 {
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
+            text-align: center;
         }
 
-        .boton-regresar:hover {
-            background-color: rgb(26, 61, 42);
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+        margin: 20px;
+        }
+
+        .special-section .content-box {
+            background-color: #a8d5a5; /* Verde claro */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .special-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .special-section .content-box {
+            flex: 1 1 calc(50% - 20px); /* Dos columnas con espacio */
+        }
+
+        /* Para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .special-section .content-box {
+                flex: 1 1 100%; /* Una columna */
+            }
         }
     </style>
->>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </head>
 <body>
     <div>
         <h1>Unit 10: A Walk Across Japan</h1>
 
-<<<<<<< HEAD
-        <section>
+        <section class="special-section">
             <h2>Reading: "A Walk Across Japan"</h2>
-            <p>"A Walk Across Japan" is a captivating work of travel literature that chronicles an individual's physical and personal journey across the diverse landscapes of Japan. This genre blends geographical exploration with profound self-discovery, offering readers a window into the transformative power of immersive cultural experiences.</p>
-            <h3>Key Elements of Travel Narrative:</h3>
-            <ul>
-                <li><strong>Geographical Challenge:</strong> The sheer scale of walking across an entire country, navigating through varied terrain and diverse environments, presents a formidable physical and logistical challenge for the protagonist.</li>
-                <li><strong>Cultural Immersion:</strong> The narrative delves into the traveler's interactions with local communities, delving into cultural traditions, customs, and language, fostering a deep understanding of Japan's rich heritage.</li>
-                <li><strong>Personal Transformation:</strong> As the protagonist overcomes obstacles and embraces new experiences, the journey becomes a catalyst for self-reflection, introspection, and personal growth.</li>
-                <li><strong>Narrative Style:</strong> The story is often told from a first-person perspective, allowing readers to intimately connect with the traveler's thoughts, emotions, and evolving perspectives.</li>
-            </ul>
-            <h3>Fascinating Facts:</h3>
-            <ul>
-                <li>Approximately 73% of Japan is mountainous, presenting unique challenges for long-distance walking.</li>
-                <li>Experienced hikers typically cover 3-4 miles (5-6 km) per hour on varied terrain.</li>
-                <li>Most traverses of Japan span around 1,500-2,000 kilometers (900-1,200 miles).</li>
-                <li>In Japanese tradition, long-distance walking (Henro) is a spiritual practice of pilgrimage and self-discovery.</li>
-            </ul>
+            <p>"A Walk Across Japan" is a captivating work of travel literature...</p>
+            <div class="content-box">
+                <h3>Key Elements of Travel Narrative:</h3>
+                <ul>
+                    <li><strong>Geographical Challenge:</strong> The sheer scale of walking...</li>
+                    <li><strong>Cultural Immersion:</strong> The narrative delves into...</li>
+                    <li><strong>Personal Transformation:</strong> As the protagonist...</li>
+                    <li><strong>Narrative Style:</strong> The story is often told...</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Fascinating Facts:</h3>
+                <ul>
+                    <li>Approximately 73% of Japan is mountainous...</li>
+                    <li>Experienced hikers typically cover 3-4 miles...</li>
+                    <li>Most traverses of Japan span around...</li>
+                    <li>In Japanese tradition, long-distance walking...</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="special-section">
             <h2>Writing: "An Accomplishment"</h2>
-            <p>Crafting a narrative about a personal accomplishment requires a specific grammatical approach to effectively convey the journey, challenges, and lessons learned. The narrative should demonstrate mastery of various verb tenses, descriptive language, and reflective tone to engage the reader and share the transformative experience.</p>
-            <h3>Grammatical Composition:</h3>
-            <ul>
-                <li><strong>Predominance of Past Tense:</strong> The core of the narrative should be narrated in the past simple tense, establishing the chronology of events and highlighting the protagonist's actions and experiences.</li>
-                <li><strong>Utilization of Present Perfect:</strong> This tense can be employed to convey the ongoing impact and lasting significance of the accomplishment, bridging the past and present.</li>
-                <li><strong>Reflective Language:</strong> The inclusion of analytical, introspective phrases in the narrative allows the writer to share personal insights, growth, and lessons learned.</li>
-                <li><strong>Narrative Structure:</strong> Effective accomplishment narratives often follow a chronological structure, guiding the reader through the challenge, obstacles, strategies, and ultimate achievement.</li>
-            </ul>
-            <h3>Engaging Grammatical Techniques:</h3>
-            <ul>
-                <li>Complex Sentences</li>
-                <li>Diverse Verb Tenses</li>
-                <li>Descriptive Adjectives</li>
-                <li>Reflective Phrases</li>
-            </ul>
+            <p>Crafting a narrative about a personal accomplishment requires...</p>
+            <div class="content-box">
+                <h3>Grammatical Composition:</h3>
+                <ul>
+                    <li><strong>Predominance of Past Tense:</strong> The core of the narrative...</li>
+                    <li><strong>Utilization of Present Perfect:</strong> This tense can be...</li>
+                    <li><strong>Reflective Language:</strong> The inclusion of analytical...</li>
+                    <li><strong>Narrative Structure:</strong> Effective accomplishment...</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Engaging Grammatical Techniques:</h3>
+                <ul>
+                    <li>Complex Sentences</li>
+                    <li>Diverse Verb Tenses</li>
+                    <li>Descriptive Adjectives</li>
+                    <li>Reflective Phrases</li>
+                </ul>
+            </div>
         </section>
+
 
         <form action="" method="post">
             <section>
-                <h2>Test Questions</h2>
+                <h2 class="test">Test Questions</h2>
 
                 <?php 
                 $questions = [
@@ -279,12 +314,5 @@ if (!empty($_SESSION['test_completed'])) {
         }
         ?>
     </div>
-=======
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-    <button onclick="window.location.href='../index.php'">Regresar a la Pantalla Principal</button>
->>>>>>> d76ff69935bd344039c6bcd81f1884854ba329a9
 </body>
 </html>
