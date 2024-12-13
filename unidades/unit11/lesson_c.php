@@ -274,27 +274,57 @@ if (!empty($_SESSION['test_completed'])) {
             </section>
         </form>
 
+        <!--Inicio -->
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $answers = $_POST['answers'] ?? [];
             $score = 0;
             $total = count($correct_answers);
+            $message = "this is the message";
+        ?>
 
-            echo "<section><h2>Results</h2><ul>";
-            foreach ($correct_answers as $question => $correct) {
-                $user_answer = $answers[$question] ?? 'No answer';
-                $is_correct = $user_answer === $correct;
-                if ($is_correct) {
-                    $score++;
+            <section>
+                <h2 style="color: #00ff00; text-align: center;"> Results</h2>
+            </section>
+
+            <ul style="background-color: #333333; padding: 20px; border-radius: 8px; list-style: none;">
+                <?php
+                foreach ($correct_answers as $question => $correct) {
+                    $user_answer = $answers[$question] ?? 'No answer';
+                    $is_correct = $user_answer === $correct;
+                    if ($is_correct) {
+                        $score++;
+                    }
+
+                ?>
+                    <li style="margin-bottom: 20px; border-bottom: 1px solid #555; padding-bottom: 10px;">
+                        <strong style="color: #ffffff; font-size: 18px;"><?php echo $question; ?></strong>
+                        <br>
+                        <span style="color: #cccccc;">Your answer: <strong style="color: <?php echo $is_correct ? '#00ff00' : '#ff0000'; ?>;">
+                                <?php echo $questions[$question][$user_answer] ?? "No answer selected"; ?>
+                            </strong></span>
+                        <br>
+                        <span style="color: #cccccc;">Correct answer: <strong style="color: #00ff00;">
+                                <?php echo $questions[$question][$correct]; ?>
+                            </strong></span>
+                        <br>
+                        <span style="color: #cccccc;">Result: <strong style="color: <?php echo $is_correct ? '#00ff00' : '#ff0000'; ?>;">
+                                <?php echo $is_correct ? "Correct" : "Incorrect"; ?>
+                            </strong></span>
+
+                    </li>
+                <?php
                 }
-                echo "<li><strong>Question:</strong> $question";
-                echo "<br><strong>Your answer:</strong> " . ($questions[$question][$user_answer] ?? 'No answer selected');
-                echo "<br><strong>Correct answer:</strong> " . $questions[$question][$correct];
-                echo "<br><strong>Result:</strong> " . ($is_correct ? 'Correct' : 'Incorrect') . "</li><br>";
-            }
-            echo "</ul><p>Your score: $score out of $total</p></section>";
+                ?>
+            </ul>
+            <h2 style="color: #00ff00; text-align: center; margin-top: 20px;">
+                Your score: <?php echo $score; ?> out of <?php echo $total; ?>
+            </h2>
+        <?php
         }
         ?>
+
+        <!--final -->
     </div>
 </body>
 </html>
