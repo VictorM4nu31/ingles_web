@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,40 @@
         .hero-section {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Cambiar a space-between para distribuir el contenido */
+            justify-content: space-between;
+            /* Cambiar a space-between para distribuir el contenido */
             background-color: #4a4a4a;
             color: white;
             padding: 40px;
             flex-wrap: wrap;
-            min-height: 100vh; /* Asegura que ocupe toda la altura visible */
-            box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+            min-height: 100vh;
+            /* Asegura que ocupe toda la altura visible */
+            box-sizing: border-box;
+            /* Asegura que el padding no aumente el tamaño total */
         }
+
         .hero-text {
             max-width: 50%;
-            text-align: left; /* Asegura que el texto esté alineado a la izquierda en pantallas grandes */
+            text-align: left;
+            /* Asegura que el texto esté alineado a la izquierda en pantallas grandes */
         }
+
         .hero-text h1 {
             font-size: 3rem;
             font-weight: bold;
             color: white;
         }
+
         .hero-text p {
             font-size: 1.2rem;
             margin: 20px 0;
         }
+
         .hero-buttons {
             display: flex;
             gap: 15px;
         }
+
         .hero-buttons button {
             text-decoration: none;
             padding: 10px 20px;
@@ -46,23 +56,27 @@
             background-color: rgb(0, 172, 29);
             cursor: pointer;
         }
+
         .hero-buttons button:hover {
-            background-color:rgb(26, 245, 77);
+            background-color: rgb(26, 245, 77);
         }
+
         .hero-carousel {
             max-width: 50%;
         }
+
         .carousel-inner img {
             width: 100%;
             border-radius: 10px;
         }
-        
+
         /* Media Queries para Pantallas Pequeñas */
         @media (max-width: 768px) {
             .hero-section {
                 flex-direction: column;
                 padding: 20px;
-                align-items: center; /* Centra los elementos en pantallas pequeñas */
+                align-items: center;
+                /* Centra los elementos en pantallas pequeñas */
             }
 
             .hero-text {
@@ -96,6 +110,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <?php include('includes/header.php'); ?>
@@ -134,56 +149,57 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Siguiente</span>
                 </a>
-=======
-    <title>Inicio | Curso de Inglés</title>
-    <!-- Incluye Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"> <!-- Archivo CSS personalizado -->
-</head>
-<body>
-    <?php include('includes/header.php'); ?> <!-- Header dinámico -->
+                <title>Inicio | Curso de Inglés</title>
+                <!-- Incluye Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <link rel="stylesheet" href="css/style.css"> <!-- Archivo CSS personalizado -->
+                </head>
 
-    <div class="container mt-4">
-        <h1 class="text-center">¡Bienvenid@!</h1>
-        <p class="text-center">Bienvenid@ al curso de inglés para aprender y ejercitar tus conocimientos en inglés.</p>
+                <body>
+                    <?php include('includes/header.php'); ?> <!-- Header dinámico -->
 
-        <!-- Carrusel de imágenes -->
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagen1.jpg" class="d-block w-100" alt="Imagen 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagen3.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
->>>>>>> 415da0469c41649415d4890fb24b99bcf8566cbb
-            </div>
-            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
+                    <div class="container mt-4">
+                        <h1 class="text-center">¡Bienvenid@!</h1>
+                        <p class="text-center">Bienvenid@ al curso de inglés para aprender y ejercitar tus conocimientos en inglés.</p>
 
-    </div>
+                        <!-- Carrusel de imágenes -->
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+                                </div>
 
-        <!-- Botones para las unidades 10 y 11 -->
-        <div class="text-center mt-4">
-            <a href="unidades/unidad10.php" class="btn btn-primary">Go to Unit 10: Living your Life</a>
-            <a href="unidades/unidad11.php" class="btn btn-primary">Go to Unit 11: Music</a>
-        </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
 
-    <?php include('includes/footer.php'); ?> <!-- Footer dinámico -->
+                    </div>
 
-    <!-- Incluye Bootstrap JS y jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+                    <!-- Botones para las unidades 10 y 11 -->
+                    <div class="text-center mt-4">
+                        <a href="unidades/unidad10.php" class="btn btn-primary">Go to Unit 10: Living your Life</a>
+                        <a href="unidades/unidad11.php" class="btn btn-primary">Go to Unit 11: Music</a>
+                    </div>
+
+                    <?php include('includes/footer.php'); ?> <!-- Footer dinámico -->
+
+                    <!-- Incluye Bootstrap JS y jQuery -->
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </body>
+
 </html>
