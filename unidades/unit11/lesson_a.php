@@ -116,16 +116,21 @@ if (!empty($_SESSION['test_completed'])) {
         <h1>Unit 11 - Lesson A</h1>
 
         <section>
-            <h2>Compound Adjectives</h2>
-            <p>Compound adjectives are words formed by combining two or more words to describe a noun in a more specific and detailed way. For example, in the phrase "It's a high-quality science fiction book," "high-quality" is a compound adjective that describes the noun "book."</p>
-            <img src="path/to/image.jpg" alt="Compound Adjectives Example">
-        </section>
+    <h2>Compound Adjectives</h2>
+    <p>Compound adjectives are words formed by combining two or more words to describe a noun in a more specific and detailed way. For example, in the phrase "It's a high-quality science fiction book," "high-quality" is a compound adjective that describes the noun "book."</p>
+    <div style="text-align: center; margin-top: 20px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xkH9dA7hu-g" title="Compound Adjectives" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
 
-        <section>
-            <h2>Past Passive</h2>
-            <p>The past passive is used to emphasize the object that receives an action, rather than the person or thing that performs the action. It's formed with the past tense of the verb "to be" (was/were) followed by the past participle of the main verb.</p>
-            <img src="path/to/image.jpg" alt="Past Passive Example">
-        </section>
+<section>
+    <h2>Past Passive</h2>
+    <p>The past passive is used to emphasize the object that receives an action, rather than the person or thing that performs the action. It's formed with the past tense of the verb "to be" (was/were) followed by the past participle of the main verb.</p>
+    <div style="text-align: center; margin-top: 20px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j_lLJSO7q2M" title="Past Passive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
 
         <form action="" method="post">
             <section>

@@ -9,6 +9,7 @@ if (!empty($_SESSION['test_completed'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +37,9 @@ if (!empty($_SESSION['test_completed'])) {
             font-size: 2.5rem;
             text-align: center;
         }
-        
+
         .test {
-            color:rgb(15, 71, 28);
+            color: rgb(15, 71, 28);
         }
 
         form {
@@ -61,7 +62,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         ul {
-            list-style-type: none; /* Elimina los puntos */
+            list-style-type: none;
+            /* Elimina los puntos */
             padding: 0;
         }
 
@@ -93,14 +95,18 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin: 0 auto;
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo */
-            height: 200px; /* Ajusta la altura fija */
-            object-fit: cover; /* Asegura proporciones */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo */
+            height: 200px;
+            /* Ajusta la altura fija */
+            object-fit: cover;
+            /* Asegura proporciones */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        section p, section h2 {
+        section p,
+        section h2 {
             color: white;
             text-align: center;
         }
@@ -112,6 +118,7 @@ if (!empty($_SESSION['test_completed'])) {
     </style>
 
 </head>
+
 <body>
     <div>
         <h1>Unit 10: Living your life</h1>
@@ -119,20 +126,20 @@ if (!empty($_SESSION['test_completed'])) {
         <section>
             <h2>Qualities for Success</h2>
             <p>The qualities for success are personal characteristics and skills that a person needs to achieve their goals and succeed in their personal and professional life. These qualities include motivation, discipline, creativity, flexibility, and responsibility, among others.</p>
-            <img src="path/to/image.jpg" alt="Qualities for Success Example">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Crfgyi3JeMU" title="Qualities for Success" allowfullscreen></iframe>
         </section>
 
         <section>
             <h2>Reflexive Pronouns</h2>
             <p>Reflexive pronouns are words that are used to refer to the same person or thing that performs the action described in the sentence. These pronouns include myself, yourself, himself, herself, itself, ourselves, yourselves, and themselves.</p>
-            <img src="path/to/image.jpg" alt="Reflexive Pronouns Example">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wNWrGAzwmK8" title="Reflexive Pronouns" allowfullscreen></iframe>
         </section>
 
         <form action="" method="post">
             <section>
                 <h2 class="test">Test Questions</h2>
 
-                <?php 
+                <?php
                 $questions = [
                     // Qualities for Success
                     "What quality refers to the ability to adapt to new situations?" => [
@@ -309,4 +316,5 @@ if (!empty($_SESSION['test_completed'])) {
         <!--final -->
     </div>
 </body>
+
 </html>

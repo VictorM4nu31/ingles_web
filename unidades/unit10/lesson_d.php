@@ -9,6 +9,7 @@ if (!empty($_SESSION['test_completed'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,9 +38,9 @@ if (!empty($_SESSION['test_completed'])) {
             text-align: center;
         }
 
-        
+
         .test {
-            color:rgb(15, 71, 28);
+            color: rgb(15, 71, 28);
         }
 
         form {
@@ -62,7 +63,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         ul {
-            list-style-type: none; /* Elimina los puntos */
+            list-style-type: none;
+            /* Elimina los puntos */
             padding: 0;
         }
 
@@ -94,14 +96,18 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin: 0 auto;
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo */
-            height: 200px; /* Ajusta la altura fija */
-            object-fit: cover; /* Asegura proporciones */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo */
+            height: 200px;
+            /* Ajusta la altura fija */
+            object-fit: cover;
+            /* Asegura proporciones */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        section p, section h2 {
+        section p,
+        section h2 {
             color: white;
             text-align: center;
         }
@@ -112,11 +118,12 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         .special-section {
-        margin: 20px;
+            margin: 20px;
         }
 
         .special-section .content-box {
-            background-color: #a8d5a5; /* Verde claro */
+            background-color: #a8d5a5;
+            /* Verde claro */
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -129,17 +136,20 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         .special-section .content-box {
-            flex: 1 1 calc(50% - 20px); /* Dos columnas con espacio */
+            flex: 1 1 calc(50% - 20px);
+            /* Dos columnas con espacio */
         }
 
         /* Para pantallas más pequeñas */
         @media (max-width: 768px) {
             .special-section .content-box {
-                flex: 1 1 100%; /* Una columna */
+                flex: 1 1 100%;
+                /* Una columna */
             }
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>Unit 10: A Walk Across Japan</h1>
@@ -195,7 +205,7 @@ if (!empty($_SESSION['test_completed'])) {
             <section>
                 <h2 class="test">Test Questions</h2>
 
-                <?php 
+                <?php
                 $questions = [
                     "The primary motivation for walking across Japan in this narrative would likely be:" => [
                         "a" => "Sightseeing and tourism",
@@ -292,8 +302,8 @@ if (!empty($_SESSION['test_completed'])) {
             </section>
         </form>
 
-<!--Inicio -->
-<?php
+        <!--Inicio -->
+        <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $answers = $_POST['answers'] ?? [];
             $score = 0;
@@ -345,4 +355,5 @@ if (!empty($_SESSION['test_completed'])) {
         <!--final -->
     </div>
 </body>
+
 </html>

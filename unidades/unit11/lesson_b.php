@@ -9,6 +9,7 @@ if (!empty($_SESSION['test_completed'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +37,9 @@ if (!empty($_SESSION['test_completed'])) {
             font-size: 2.5rem;
             text-align: center;
         }
-        
+
         .test {
-            color:rgb(15, 71, 28);
+            color: rgb(15, 71, 28);
         }
 
         form {
@@ -61,7 +62,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         ul {
-            list-style-type: none; /* Elimina los puntos */
+            list-style-type: none;
+            /* Elimina los puntos */
             padding: 0;
         }
 
@@ -93,14 +95,18 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin: 0 auto;
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo */
-            height: 200px; /* Ajusta la altura fija */
-            object-fit: cover; /* Asegura proporciones */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo */
+            height: 200px;
+            /* Ajusta la altura fija */
+            object-fit: cover;
+            /* Asegura proporciones */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        section p, section h2 {
+        section p,
+        section h2 {
             color: white;
             text-align: center;
         }
@@ -111,27 +117,43 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         .special-section {
-            background-color: #e0f7e0; /* Verde claro */
-            border: 2px solid #a2d5a2; /* Borde verde */
-            border-radius: 10px; /* Esquinas redondeadas */
-            padding: 20px; /* Espaciado interno */
-            margin: 20px 0; /* Espaciado externo */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-            font-family: Arial, sans-serif; /* Tipografía */
+            background-color: #e0f7e0;
+            /* Verde claro */
+            border: 2px solid #a2d5a2;
+            /* Borde verde */
+            border-radius: 10px;
+            /* Esquinas redondeadas */
+            padding: 20px;
+            /* Espaciado interno */
+            margin: 20px 0;
+            /* Espaciado externo */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Sombra */
+            font-family: Arial, sans-serif;
+            /* Tipografía */
         }
+
         .special-section h2 {
-            color: #2f5d2f; /* Verde oscuro */
-            text-align: center; /* Centrar título */
+            color: #2f5d2f;
+            /* Verde oscuro */
+            text-align: center;
+            /* Centrar título */
         }
+
         .special-section h3 {
-            color: #4a8a4a; /* Verde medio */
+            color: #4a8a4a;
+            /* Verde medio */
         }
+
         .special-section p {
-            color: #333; /* Texto oscuro */
-            line-height: 1.6; /* Espaciado entre líneas */
+            color: #333;
+            /* Texto oscuro */
+            line-height: 1.6;
+            /* Espaciado entre líneas */
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>Unit 11: Giving Instructions</h1>
@@ -149,13 +171,17 @@ if (!empty($_SESSION['test_completed'])) {
             <p>Instructions may include some background information or explanation to help the reader understand the purpose or context of the steps.</p>
             <h3>5. Checking for understanding:</h3>
             <p>Frequently instructions will prompt the reader to confirm they've completed a step or understand what to do next, using phrases like "Did you get that?", "Now what?", etc.</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j_lLJSO7q2M" title="Giving Instructions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
+
 
         <form action="" method="post">
             <section>
                 <h2 class="test">Test Questions</h2>
 
-                <?php 
+                <?php
                 $questions = [
                     "Which verb form is most commonly used to begin each step in a set of instructions?" => [
                         "a" => "Past tense",
@@ -270,4 +296,5 @@ if (!empty($_SESSION['test_completed'])) {
         <!--final -->
     </div>
 </body>
+
 </html>

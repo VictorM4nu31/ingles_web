@@ -9,6 +9,7 @@ if (!empty($_SESSION['test_completed'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +37,9 @@ if (!empty($_SESSION['test_completed'])) {
             font-size: 2.5rem;
             text-align: center;
         }
-        
+
         .test {
-            color:rgb(15, 71, 28);
+            color: rgb(15, 71, 28);
         }
 
         form {
@@ -61,7 +62,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         ul {
-            list-style-type: none; /* Elimina los puntos */
+            list-style-type: none;
+            /* Elimina los puntos */
             padding: 0;
         }
 
@@ -93,14 +95,18 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin: 0 auto;
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo */
-            height: 200px; /* Ajusta la altura fija */
-            object-fit: cover; /* Asegura proporciones */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo */
+            height: 200px;
+            /* Ajusta la altura fija */
+            object-fit: cover;
+            /* Asegura proporciones */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        section p, section h2 {
+        section p,
+        section h2 {
             color: white;
             text-align: center;
         }
@@ -111,6 +117,7 @@ if (!empty($_SESSION['test_completed'])) {
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>Unit 11: A Guide to Breaking into the Music Business</h1>
@@ -131,7 +138,7 @@ if (!empty($_SESSION['test_completed'])) {
             <section>
                 <h2 class="test">Test Questions</h2>
 
-                <?php 
+                <?php
                 $questions = [
                     // A Guide to Breaking into the Music Business
                     "What is the first step to breaking into the music business?" => [
@@ -284,4 +291,5 @@ if (!empty($_SESSION['test_completed'])) {
         <!--final -->
     </div>
 </body>
+
 </html>

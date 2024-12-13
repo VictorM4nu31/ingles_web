@@ -125,12 +125,13 @@ if (!empty($_SESSION['test_completed'])) {
         <section>
             <h2>Advising against something</h2>
             <p>It focuses on how to express recommendations so that someone avoids taking an action or making a decision that may be harmful or not beneficial. This type of advice usually has a preventive tone and is designed to warn of possible risks, inconveniences or negative consequences.</p>
-            <img src="path/to/image.jpg" alt="Advising Image">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EC9TBfO6O2Y" title="Reflexive Pronouns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section>
             <h2>Considering advice</h2>
             <p>It focuses on how to listen, reflect and respond to the advice someone gives us. This process involves not only understanding the advice, but also evaluating its relevance and usefulness before making a decision.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dEMXThjVxRg" title="Reflexive Pronouns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <form action="" method="post">

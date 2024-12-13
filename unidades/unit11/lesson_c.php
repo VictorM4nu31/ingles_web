@@ -9,6 +9,7 @@ if (!empty($_SESSION['test_completed'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +37,9 @@ if (!empty($_SESSION['test_completed'])) {
             font-size: 2.5rem;
             text-align: center;
         }
-        
+
         .test {
-            color:rgb(15, 71, 28);
+            color: rgb(15, 71, 28);
         }
 
         form {
@@ -61,7 +62,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         ul {
-            list-style-type: none; /* Elimina los puntos */
+            list-style-type: none;
+            /* Elimina los puntos */
             padding: 0;
         }
 
@@ -93,14 +95,18 @@ if (!empty($_SESSION['test_completed'])) {
             display: block;
             margin: 0 auto;
             width: 100%;
-            max-width: 300px; /* Ajusta el tamaño máximo */
-            height: 200px; /* Ajusta la altura fija */
-            object-fit: cover; /* Asegura proporciones */
+            max-width: 300px;
+            /* Ajusta el tamaño máximo */
+            height: 200px;
+            /* Ajusta la altura fija */
+            object-fit: cover;
+            /* Asegura proporciones */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        section p, section h2 {
+        section p,
+        section h2 {
             color: white;
             text-align: center;
         }
@@ -115,7 +121,8 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         .special-section .content-box {
-            background-color: #a8d5a5; /* Verde claro */
+            background-color: #a8d5a5;
+            /* Verde claro */
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -128,17 +135,20 @@ if (!empty($_SESSION['test_completed'])) {
         }
 
         .special-section .content-box {
-            flex: 1 1 calc(50% - 20px); /* Dos columnas con espacio */
+            flex: 1 1 calc(50% - 20px);
+            /* Dos columnas con espacio */
         }
 
         /* Para pantallas más pequeñas */
         @media (max-width: 768px) {
             .special-section .content-box {
-                flex: 1 1 100%; /* Una columna */
+                flex: 1 1 100%;
+                /* Una columna */
             }
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>Unit 11: Verb and Noun Formation & Present Perfect with Yet and Already</h1>
@@ -154,6 +164,9 @@ if (!empty($_SESSION['test_completed'])) {
                     <li>The task is to identify the noun forms of the verbs listed in the table.</li>
                 </ul>
             </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cnYDSmOktQ0" title="Verb and Noun Formation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section class="special-section">
@@ -167,14 +180,18 @@ if (!empty($_SESSION['test_completed'])) {
                     <li>The present perfect tense is formed with "have/has + past participle".</li>
                 </ul>
             </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KZA_v0lzq_U" title="Present Perfect with Yet and Already" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
+
 
 
         <form action="" method="post">
             <section>
                 <h2>Test Questions</h2>
 
-                <?php 
+                <?php
                 $questions = [
                     // Verb and Noun Formation
                     "What is the noun form of the verb 'appreciate'?" => [
@@ -327,4 +344,5 @@ if (!empty($_SESSION['test_completed'])) {
         <!--final -->
     </div>
 </body>
+
 </html>
